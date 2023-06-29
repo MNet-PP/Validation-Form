@@ -56,6 +56,10 @@ form .input-field {
     transition: all 0.4s ease-in ;
 }
 
+.invalid input {
+    border-color: #fc3d03;
+}
+
 .input-field .show-hide {
     position: absolute;
     right: 13px;
@@ -73,12 +77,15 @@ form .input-field {
 }
 
 .field .error {
-    display: flex;
     align-items: center;
     margin-top: 6px;
     color: #fc3d03;
     font-size: 13px;
-    /*display: none;*/
+    display: none;
+}
+
+.invalid .error {
+    display: flex;
 }
 
 .error .error-icon {
